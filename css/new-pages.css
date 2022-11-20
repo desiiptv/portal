@@ -1,0 +1,301 @@
+.inner p {
+    font-size: 13px;
+    text-align: left;
+    color: #000000;
+    /* background: #ffffff; */
+    border-radius: 0;
+    font-weight: normal;
+    padding: 7px 16px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+    box-shadow: none;
+    font-size: 16px;
+    margin-top: 16px;
+    
+}
+.has-dropmenu{top:90% !important;}
+.box{min-height: 60px;}
+
+.icon-left-guru {
+    width: 25%;
+    float: left;
+}
+.icon-right-guru {
+    width: 75%;
+    float: right;
+        margin-top: 8px;
+}
+#channel .channeldiv {
+    width: 33.3% !important;
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+    background: #f1f2f4;
+    box-shadow: none;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    margin: 0;
+    border-radius: 0px;
+    border-bottom: 1px solid #dfe0e2;
+    border-right: 1px solid #dfe0e2;
+    text-align: center;
+}
+#channel .channeldiv:hover{
+    box-shadow: 0px 0px 64px -12px rgb(0 0 0 / 20%);
+    margin-top: -4px;
+    background:#fff;
+}
+
+.channel-page {
+    background: #fff !important;
+    color: #333;
+}
+section.channel-page h1, section.channel-page p, section.channel-page a {
+    color: #333333 !important;
+}
+section.channel-page a {
+    color: #ef9033  !important;
+}
+
+.channel-page p {
+    max-width: 960px  !important;
+    text-align:center !important;
+}
+.img-left-punjabi {
+    width: 40%;
+    float: left;
+    overflow: hidden;
+}
+.img-right-punjabi {
+    width: 56%;
+    float: right;
+    text-align: left;
+    padding-top: 40px;
+}
+.img-left-punjabi img {
+    width: 100%;
+    height: 100%;
+}
+.punjabi-content {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0;
+}
+.img-right-punjabi h1 {
+    font-size: 20px;
+    font-weight:700;
+}
+.img-right-punjabi p {
+    text-align: left !important;
+    font-size: 15px;
+}
+/*---------------------end--------------*/
+ /*--------------------------sub menu-------------------------*/
+
+.submenu {  background:#feffcb; visibility: hidden; opacity: 0; min-width: 5rem; position: absolute; transition: all 0.5s ease; margin-top: 1rem;
+  left: 0;display: none;top: 10px; padding:0px; width:185px !important; text-align:left !important;
+}
+ul.has-dropmenu.submenu {
+    width: 185px;
+}
+ul.submenu li a:hover {
+    background: none !important;
+    color:#ef9033 !important;
+}
+.submenu li{list-style:none;  border-top:1px solid #ccc;}
+.submenu li a {
+    color: #333 !important;
+    font-weight: 500;
+    text-align: left !important;
+    padding: 10px !important;
+    border-radius: 0 !important;
+    margin-left:0px !important;
+    font-size:13px !important;
+    display:block !important;
+}
+.span_4 {
+    text-align: center;
+    padding: 5px 5px;
+}
+ul.topNav li a{ padding: 6px 15px;}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  list-style:none;
+}
+.inner-menu-list {
+    position: relative;
+}
+
+        /* Dinesh Siwas Styles */
+
+        /*.products-main{
+            position: relative;
+        }*/
+        .has-dropmenu{
+            display: none;
+            position: absolute;
+            
+            background: #feffcb;
+            left: 0;
+            right: 0;
+            top: 100%;
+            z-index: 2;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        .has-dropmenu li a{
+            display: block;
+            background: #feffcb !important;
+            border: none !important;
+            color: #333 !important;
+            margin: 0 15px !important;
+            font-weight: 600;
+            font-size: 16px;
+            -webkit-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+        .has-dropmenu .main_image{
+            width: 75%;
+            height: auto;
+            margin-right: 0;
+            display: inline-block; 
+            background: none;
+        }
+        .has-dropmenu li a span{
+            display: block;
+            position: relative;
+            border-top: 1px solid rgba(0,0,0,0.2);
+            padding: 15px 0 0 0;
+        }
+        .products-main:hover .has-dropmenu{
+            display: flex !important;
+            opacity: 1;
+        }
+        .has-dropmenu li a:hover{
+            color: red !important;
+        }
+
+@media only screen and (max-width: 1023px){
+
+.submenu{    visibility: visible; opacity:1; width:100% !important;}
+ ul#topNav {
+                position: relative;
+                top: 0;
+                z-index: 99;
+                background: transparent;
+                width: 100%;
+                left: 0;
+                right: 0;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                display: none;
+            }
+            .products-main{
+                position: relative;
+            }
+            
+            .has-dropmenu, .products-main:hover .has-dropmenu{
+                position: static;
+                display: block !important;
+                background: transparent;
+            }
+            .has-dropmenu .span_4{
+                width: 100%;
+            }
+            .has-dropmenu .main_image{
+                display: none !important;
+            }
+            .has-dropmenu li a{
+                color: #FFF !important;
+                position: relative;
+                z-index: 3;
+                transition: none !important;
+                padding: 5px 0 5px 40px !important;
+               
+                font-weight: 400;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            .has-dropmenu li a::before{
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-left: 6px solid white;
+                border-bottom: 5px solid transparent;
+                display: block;
+                position: absolute;
+                left: 25px;
+                top: 12px;
+            }
+            .has-dropmenu li a:hover{
+                background: #ef9033 !important;
+                color: #FFF !important;
+            }
+            
+            .has-dropmenu li:first-child a{
+                border-top: none !important;
+            }
+            .has-dropmenu li a span{
+                padding: 5px 0;
+                border-top: none !important;
+            }
+            ul#topNav li a {padding: 15px;border-bottom: 1px solid rgba(0,0,0,0.1); margin-left: 0; text-align: left;}
+
+            ul#topNav li:last-child a {
+                border: 0;
+            }
+#navbarSupportedContent {
+    overflow-y: scroll;
+    height: 400px;
+}
+.has-dropmenu li a {
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 0px !important;
+}
+.has-dropmenu .span_4 {
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+}
+.has-dropmenu .span_4 a {
+    padding: 0px 40px !important;
+}
+.submenu li{border-top:none !important;}
+
+}
+
+ /*--------------------end-------------------------*/
+ /*--------------------channels ganric-------------------------*/
+@media only screen and (max-width:767px){
+.img-left-punjabi{width:100%; padding:0px 30px !important;}
+.img-right-punjabi{width:100%; padding:0 30px;}
+.icon-left-guru{width:100%;}
+.has-dropmenu li a{background:none !important;}
+
+
+}
+    
+
+@media only screen and (max-width:560px){
+#channel .channeldiv {
+    width: 46% !important;
+}
+.icon-right-guru{width:100%; text-align:center;}
+.call-us {
+    display: none;
+}
+.has-dropmenu li a {
+    text-align: center !important;
+    position: relative;
+}
+
+}
