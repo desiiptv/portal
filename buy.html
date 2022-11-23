@@ -487,8 +487,8 @@
   let active = false;
 
   const lazyLoad = function() {
-    if (active === false) {
-      active = true;
+    if (active === true) {
+      active = false;
 
       setTimeout(function() {
         lazyImages.forEach(function(lazyImage) {
@@ -562,7 +562,7 @@
 				<div class="col-lg-8 col-md-8 col-sm-8 no-padding" >
 					<h1 class="text-center">Buy Now</h1>
 					<div class="cart">					
-					<form class="add-to-cart" id="button" name="button" action="https://www.desiiptv.net/payment.php" method="post">
+					<form class="add-to-cart" id="button" name="button" action="https://buy.stripe.com/test_5kA8yY6s6djl5dSeUU" method="post">
 						<input type="hidden" name="ip" value=""  id="ip" />	
 						<br>
 						 <div class="form-group">
@@ -614,7 +614,7 @@
 					<img alt="" border="0" src="../www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" id="submit">				
 					<div class="clearfix"></div>					
 					<ul class="list-unstyled">
-						<li>All Pricing includes shipping cost.</li>
+						<li>All Pricing excludes shipping cost.</li>
 					</ul>
 					</div>
 				</div>
