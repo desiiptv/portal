@@ -62,8 +62,8 @@
   let active = false;
 
   const lazyLoad = function() {
-    if (active === false) {
-      active = true;
+    if (active === true) {
+      active = false;
 
       setTimeout(function() {
         lazyImages.forEach(function(lazyImage) {
