@@ -556,52 +556,7 @@
 		</div>
 	</section>
 
-  <div id="smart-button-container">
-    <div style="text-align: center;">
-      <div id="paypal-button-container"></div>
-    </div>
-  </div>
-<script src="https://www.paypal.com/sdk/js?client-id=AbM9LQ4NuBvv6gLtNqAT3cjnUsKiZUl98YFdtpQbh4jmTOS1zd8FPMbr2ALq_uk0X7F0EAGf5uGySDou&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-<script>
-  function initPayPalButton() {
-    paypal.Buttons({
-      style: {
-        shape: 'rect',
-        color: 'gold',
-        layout: 'vertical',
-        label: 'paypal',
-        
-      },
-
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
-        });
-      },
-
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(orderData) {
-          
-          // Full available details
-          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-          // Show a success message within this page, e.g.
-          const element = document.getElementById('paypal-button-container');
-          element.innerHTML = '';
-          element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-          // Or go to another URL:  actions.redirect('thank_you.html');
-          
-        });
-      },
-
-      onError: function(err) {
-        console.log(err);
-      }
-    }).render('#paypal-button-container');
-  }
-  initPayPalButton();
-</script>
+  
 	
 	<section class="more-information ">
 		<div class="container">
@@ -656,6 +611,54 @@
 						</div>	
 						<div class="col-lg-6">
 							<input type="image" src="images/add-to-cart.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" class="img-responsive">
+
+              <div id="smart-button-container">
+                <div style="text-align: center;">
+                  <div id="paypal-button-container"></div>
+                </div>
+              </div>
+            <script src="https://www.paypal.com/sdk/js?client-id=AbM9LQ4NuBvv6gLtNqAT3cjnUsKiZUl98YFdtpQbh4jmTOS1zd8FPMbr2ALq_uk0X7F0EAGf5uGySDou&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+            <script>
+              function initPayPalButton() {
+                paypal.Buttons({
+                  style: {
+                    shape: 'rect',
+                    color: 'gold',
+                    layout: 'horizontal',
+                    label: 'paypal',
+                    
+                  },
+            
+                  createOrder: function(data, actions) {
+                    return actions.order.create({
+                      purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+                    });
+                  },
+            
+                  onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(orderData) {
+                      
+                      // Full available details
+                      console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+            
+                      // Show a success message within this page, e.g.
+                      const element = document.getElementById('paypal-button-container');
+                      element.innerHTML = '';
+                      element.innerHTML = '<h3>Thank you for your payment!</h3>';
+            
+                      // Or go to another URL:  actions.redirect('thank_you.html');
+                      
+                    });
+                  },
+            
+                  onError: function(err) {
+                    console.log(err);
+                  }
+                }).render('#paypal-button-container');
+              }
+              initPayPalButton();
+            </script>
+
 						</div>
 					</form>
 					<img alt="" border="0" src="../www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" id="submit">				
@@ -698,7 +701,7 @@
 					<ul class="list-unstyled">
 						<li>1 Year Hardware Warranty.</li>
 						<li>Hardware Warranty Can be extended.</li>
-						<li>5 Year IPTV Subscription Warranty</li>
+						<li>3 Year IPTV Subscription Warranty</li>
 						<li>IPTV Subscription Warranty Can  be  extended.</li>
 						<li>Once Order is placed it may take up  to 5 business days to ship</li>
 						<li>Once you receive the  shipment,please call our 24*7  customer  service to activation</li>
