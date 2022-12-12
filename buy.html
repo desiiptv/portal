@@ -570,10 +570,10 @@
 						 <div class="form-group">
 							<label for="exampleInputEmail1">Select Plan</label>
 							<select name="payment" id="aioConceptName" class="form-control" required="">
-								<!-- <option selected="selected" value="270-Promo Offer, 3 Year Subscription with MAG420w1 for  $270.00 USD">Promo Offer – 3 Year Subscription with MAG420w1 for $270.00 USD</option> -->
-						       <option value="350-3 Year Subscription with MAG524w3 for $350.00 USD">Promo Offer – 3 Year Subscription with MAG524w3 for $350.00 USD</option>
-                                 <option value="330-3 Year Subscription with MAG522w3 for $330.00 USD">Promo Offer – 3 Year Subscription with MAG522w3 for $330.00 USD</option>
-						       <option value="330-3 Year Subscription with MAG524w3 for $350.00 USD">Promo Offer – 3 Year Subscription with MAG524w3 for $330.00 USD</option>
+								 <option selected="selected" value="270-Promo Offer, 3 Year Subscription with MAG420w1 for  $270.00 USD">Promo Offer – 3 Year Subscription with MAG420w1 for $270.00 USD</option>
+						     <option value="350-3 Year Subscription with MAG524w3 for $350.00 USD">Promo Offer – 3 Year Subscription with MAG524w3 for $350.00 USD</option>
+                 <option value="330-3 Year Subscription with MAG522w3 for $330.00 USD">Promo Offer – 3 Year Subscription with MAG522w3 for $330.00 USD</option>
+						     <option value="330-3 Year Subscription with MAG524w3 for $350.00 USD">Promo Offer – 3 Year Subscription with MAG524w3 for $330.00 USD</option>
 							   <option value="320-3 Year Subscription with MAG522w1 for $320.00 USD">Promo Offer – 3 Year Subscription with MAG522w1 for $320.00 USD</option> 
 							   <option value="300-3 Year Subscription with MAG522w1 for $300.00 USD">Promo Offer – 3 Year Subscription with MAG522w1 for $300.00 USD</option>
                  <option value="159.99-5 STREAMPRO Buzz TV Android Set Top Box (Set top box only) For $159.99 USD">STREAMPRO Buzz TV Android Set Top Box (Set top box only) For $159.99  USD</option>
@@ -631,7 +631,7 @@
             
                   createOrder: function(data, actions) {
                     return actions.order.create({
-                      purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+                      purchase_units: [{"amount":{"currency_code":"USD","value":350}}]
                     });
                   },
             
